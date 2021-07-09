@@ -1,18 +1,33 @@
-@import "variables.scss";
+@import "_variables.scss";
 
-.barra{
-    color:rgb(248, 236, 131);
-     font-family:'Montserrat', sans-serif;
-     font-weight: bold;
-     font-size: 25px; 
-     background-color: rgb(248, 236, 131);
-     padding: 0%;
-     width: 70%;
-     height: 50px;
-     position: absolute;
-     top: 10%;
-     left: 20%;
-     max-width: 1000px;
-     margin: auto;
+.barra {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 0%;
+    width: 70%;
+    height: 50px;
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    max-width: 1000px;
+    margin: auto; 
+     menu {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;   
+   }
+            li {
+             list-style: none;
+             display: inline-block;
+             margin-top: 10px;
+   }
+               a { 
+                 text-decoration: none;
+                 color: #2754d1;
+   }
+                  a:hover {
+                     background-color: rgba(228, 250, 34, 0.959);
+                     transform: scale( 2,4);
+   }
 }
-

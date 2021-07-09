@@ -1,9 +1,7 @@
 .barra {
-  color: #f8ec83;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Barlow Condensed', sans-serif;
   font-weight: bold;
   font-size: 25px;
-  background-color: #f8ec83;
   padding: 0%;
   width: 70%;
   height: 50px;
@@ -12,3 +10,17 @@
   left: 20%;
   max-width: 1000px;
   margin: auto; }
+  .barra menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly; }
+  .barra li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px; }
+  .barra a {
+    text-decoration: none;
+    color: #2754d1; }
+  .barra a:hover {
+    background-color: rgba(228, 250, 34, 0.959);
+    transform: scale(2, 4); }
