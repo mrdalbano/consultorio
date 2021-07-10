@@ -1,5 +1,13 @@
 @import "_variables.scss";
 
+@mixin nombreProf {
+   font-family: $tipogTitulo;
+   font-size: 20px;
+   color: $colorTitulo; 
+   font-weight: bold;
+}
+
+
 .barra {
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: bold;
@@ -27,7 +35,113 @@
                  color: #2754d1;
    }
                   a:hover {
-                     background-color: rgba(228, 250, 34, 0.959);
+                     background-color: #F60C86;
                      transform: scale( 2,4);
    }
+}
+
+
+.animate__animated  {
+   font-family: 'Gochi Hand', cursive;
+   font-size: 150px;
+   color: #eb3333;
+   text-align: center;
+   position: relative;
+   margin-top: 3%; 
+}
+
+#nuestroConsultorio {
+    @extend .animate__animated;
+    margin-left:20px;
+    margin-bottom: -4%;
+    font-size: 100px;
+
+}
+
+
+     
+.servicios {
+   margin-left: 5%;
+   margin-right: 5%;
+   display: grid;
+   grid-template-columns: minmax(300px,400px) 1fr;
+   grid-template-rows: 200px 200px 200px 300px 300px 300px;
+   gap: 5%;
+   justify-items: center;
+   grid-template-areas:"ana servicioAna"
+                       "flavia servicioFlavia"
+   
+}
+.nombre {
+   background-color: #FFF6A2;
+   height: 10%;
+   width: 140px;
+   grid-area:ana;
+   align-self: flex-end;
+   text-align: center;
+   @include nombreProf();
+}
+
+.nombreDos {
+   @extend .nombre;
+   grid-area:flavia;
+}
+
+
+#fotoAna {
+   width: 140px;
+   height: 90%;
+   grid-area:ana;
+}
+
+#fotoFlavia {
+   width: 140px;
+   height: 90%;
+   grid-area:flavia;
+
+}
+
+
+
+.tituloServAna {
+   background-color: #9FEED1;
+   height: 20%;
+   width: 100%;
+   text-align: center;
+   grid-area: servicioAna;
+   font-family: $tipogTitulo;
+   font-weight: bold;
+   font-size: 15px;
+}
+
+.servicioAna { 
+   background-color : #FFF6A2;
+   grid-area:servicioAna;
+   height: 90%;
+   width: 100%;
+   align-self: flex-end;
+      h2{   
+         
+         color: $colorTitulo;
+         font-family: $tipogTitulo;
+         font-weight: bold;
+         font-size: 25px; 
+      }
+          p{     
+            margin-top: -1%;
+            font-family: $tipogTitulo;
+            font-weight: bold;
+            font-size: 18px;
+
+          }
+}
+
+#tituloServFlavia {
+   @extend .tituloServAna;
+   grid-area: servicioFlavia;
+}
+
+.servicioFlavia { 
+   @extend .servicioAna;
+   grid-area:servicioFlavia;
 }

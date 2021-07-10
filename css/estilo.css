@@ -9,16 +9,7 @@ body {
      margin-left: 70px;
 }
 
-.animate__animated  {
-     font-family: 'Gochi Hand', cursive;
-     font-size: 150px;
-     color: #eb3333;
-     text-align: center;
-     position: relative;
-     margin-top: 3%;
-     
-     
-}
+
 
 #arcoiris{
      position: relative;
@@ -70,13 +61,6 @@ body {
      transform: scale(1.04);
 }
 
-
-#nuestroConsultorio{
-     font-family:'Montserrat', sans-serif;
-     font-weight: bold;
-     margin-left:20px;
-     font-size: 60px;
-}
 .galeria{
      display: grid;
      grid-template-columns:50% 50%;
@@ -115,85 +99,10 @@ body {
 }
 
 
-     
-.servicios {
-     margin-left: 20%;
-     display: grid;
-     grid-template-columns: 200px  500px;
-     grid-template-rows: 200px 200px 200px 300px 300px 300px;
-     gap: 1%;
-     justify-items: center;
-     grid-template-areas:"ana servicioAna"
-                         "flavia servicioFlavia"
-     
-}
 
-#ana {
-     background-color: rgb(248, 236, 131);
-     height: 10%;
-     width: 140px;
-     grid-area:ana;
-     align-self: flex-end;
-     text-align: center;
 
-}
 
-#fotoAna {
-     width: 140px;
-     height: 90%;
-     grid-area:ana;
-     
-   
 
-}
-
-#tituloServAna {
-     background-color: rgb(117, 221, 172);
-     height: 15%;
-     width: 100%;
-     text-align: center;
-     grid-area: servicioAna;
-}
-
-#servicioAna { 
-     background-color: rgb(248, 236, 131);
-     grid-area:servicioAna;
-     height: 90%;
-     width: 100%;
-     align-self: flex-end;
-}
-
-#flavia {
-     background-color: rgb(248, 236, 131);
-     height: 10%;
-     width: 140px;
-     grid-area:flavia;
-     align-self: flex-end;
-     text-align: center;
-}
-
-#fotoFlavia {
-     width: 140px;
-     height: 90%;
-     grid-area:flavia;
-
-}
-
-#tituloServFlavia {
-     background-color:rgb(117, 221, 172);
-     height: 15%;
-     width: 100%;
-     text-align: center;
-     grid-area: servicioFlavia;
-}
-
-#servicioFlavia { 
-     background-color: rgb(248, 236, 131);
-     grid-area:servicioFlavia;
-     height: 90%;
-     width: 100%;
-     align-self: flex-end;
-}
 
 #footer {
      position: fixed;
